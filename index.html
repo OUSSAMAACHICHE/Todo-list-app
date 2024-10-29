@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Google fonts Josefin-sans  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+
+    <!-- css file here  -->
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body
+    class="dark:bg-dark_mode-Very-Dark-Blue bg-light_mode-very-Light-Grayish-Blue relative text-lg font-jusefin h-screen"
+  >
+    <main class="pb-7">
+      <header class="m-auto max-sm:w-4/5 sm:w-3/4">
+        <div class="flex justify-between items-center pb-8 pt-7">
+          <h1
+            class="text-light_mode-very-Light-Gray uppercase text-lg font-bold tracking-[0.5rem]"
+          >
+            Todo
+          </h1>
+          <input type="checkbox" id="theme-toggle" hidden />
+          <label for="theme-toggle" class="icon cursor-pointer">
+            <i class="sun-icon"
+              ><img src="./images/icon-sun.svg" alt="sun-icon"
+            /></i>
+            <i class="moon-icon"
+              ><img src="./images/icon-moon.svg" alt="moon-icon"
+            /></i>
+          </label>
+        </div>
+        <!-- typing task input  -->
+        <div
+          class="flex justify-center items-center bg-light_mode-very-Light-Gray dark:bg-dark_mode-Very-Dark-Grayish-Blue p-2 rounded-md"
+        >
+          <input class="checkbox" type="checkbox" id="checkbox" />
+          <input
+            type="text"
+            name="input-task"
+            id="task_input"
+            placeholder="Create a new todo"
+            class="focus:outline-none dark:focus:bg-dark_mode-Very-Dark-Grayish-Blue dark:bg-dark_mode-Very-Dark-Grayish-Blue placeholder:text-sm px-3 dark:caret-white dark:placeholder:text-light_mode-Dark-Grayish-Blue dark:text-light_mode-very-Light-Gray text-dark_mode-Very-Dark-Blue"
+          />
+        </div>
+      </header>
+
+      <!-- The tasks  -->
+      <section
+        id="tasks"
+        class="tasks max-sm:w-4/5 sm:w-3/4 bg-light_mode-very-Light-Gray dark:text-light_mode-very-Light-Gray dark:bg-dark_mode-Very-Dark-Desaturated-Blue p-2 mt-4 mx-auto rounded-md shadow-md hidden"
+      >
+        <ul></ul>
+      </section>
+
+      <div
+        class="flex max-sm:w-4/5 sm:w-3/4 mx-auto gap-4 shadow-xl rounded-md bg-light_mode-very-Light-Gray dark:bg-dark_mode-Very-Dark-Desaturated-Blue p-3 justify-center text-dark_mode-Dark-Grayish-Blue mt-4"
+      >
+        <button id="all" class="active">All</button>
+        <button id="active">Active</button>
+        <button id="completed">Completed</button>
+      </div>
+    </main>
+
+
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ouss_Ach</a>.
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
